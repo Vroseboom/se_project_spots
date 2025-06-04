@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 104px;
+  height: 16px;
+  bottom: 0px;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  white-space: nowrap;
+  overflow: visible;
+  color: #212121;
+  opacity: 70%;
+  transform: translateX(-50%);
+  padding-top: 100px;
+}

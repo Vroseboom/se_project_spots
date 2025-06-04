@@ -1,0 +1,71 @@
+.avatar {
+  width: 505px;
+  height: 190px;
+  gap: 20px;
+}
+.avatar__border {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 8px;
+  border: #d9d9d9 1px solid;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.avatar__image {
+  width: 190px;
+  height: 247.83px;
+  object-fit: cover;
+}
+.avatar__info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 210px;
+  width: 420px;
+  height: 190px;
+  justify-content: space-between;
+}
+.avatar__profile {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 60px;
+  gap: 12px;
+}
+.profile__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+.profile__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #212121;
+  opacity: 70%;
+}
+.avatar__button {
+  display: flex;
+  justify-content: flex-start;
+  width: 107.34px;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  opacity: 70%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 0;
+}
+.avatar__icon {
+  width: 15.34px;
+  height: 16px;
+  opacity: 70%;
+  transition: opacity 0.3s ease;
+}
+.avatar__button:hover {
+  opacity: 100%;
+}
