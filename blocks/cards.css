@@ -6,8 +6,8 @@
   border-bottom: 1px solid #21212166;
   padding-top: 20px;
   padding-bottom: 40px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
   gap: 20px;
 }
 .card {
@@ -75,5 +75,9 @@
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(288px, 413px));
     gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
