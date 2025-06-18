@@ -106,6 +106,9 @@
   transition: opacity 0.3s ease;
   cursor: pointer;
 }
+.profile__post-button:hover {
+  opacity: 80%;
+}
 
 @media screen and (max-width: 627px) {
   .profile {
