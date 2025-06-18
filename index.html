@@ -7,151 +7,137 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
-  <body>
-    <div class="page">
-      <div class="menubar">
-        <img class="logo" src="spots-images/Logo.svg" alt="Spots Logo" />
-      </div>
-      <header class="header">
-        <div class="avatar">
-          <div class="avatar__border">
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="spots-images/Logo.svg" alt="Spots Logo" />
+    </header>
+    <main class="page__content">
+      <section class="profile">
+        <img
+          class="profile__image"
+          src="spots-images/avatar.jpg"
+          alt="Bessie Coleman"
+        />
+        <div class="profile__info">
+          <div class="profile__content">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+          </div>
+          <button class="profile__edit-button" type="button">
             <img
-              class="avatar__image"
-              src="spots-images/avatar.jpg"
-              alt="Bessie Coleman"
+              src="spots-images/Edit-Icon.png"
+              alt="edit icon"
+              class="profile__icon"
             />
-          </div>
-          <div class="avatar__info">
-            <div class="avatar__profile">
-              <h1 class="profile__name">Bessie Coleman</h1>
-              <p class="profile__description">Civil Aviator</p>
-            </div>
-            <button class="avatar__button">
-              <img
-                src="spots-images/Edit-Icon.png"
-                alt="edit icon"
-                class="avatar__icon"
-              />
-              Edit Profile
-            </button>
-          </div>
+            Edit Profile
+          </button>
         </div>
-        <button class="button__large">
+        <div class="profile__post-button__container">
+          <button class="profile__post-button" type="button">
+            <img
+              src="spots-images/Plus-Icon.png"
+              alt="plus icon"
+              class="profile__post-button__icon"
+            />
+            New Post
+          </button>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="card">
           <img
-            src="spots-images/Plus-Icon.png"
-            alt="plus icon"
-            class="button__icon"
+            class="card__image"
+            src="spots-images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="snow covered building viewed through open window"
           />
-          New Post
-        </button>
-      </header>
-      <main class="cards">
-        <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="snow covered building viewed through open window"
-            />
-          </div>
           <div class="card__info">
-            <h2 class="info__title">Val Thorens</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">Val Thorens</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
         <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/2-photo-by-ceiline-from-pexels.jpg"
-              alt="Restaurant street view"
-            />
-          </div>
+          <img
+            class="card__image"
+            src="spots-images/2-photo-by-ceiline-from-pexels.jpg"
+            alt="Restaurant street view"
+          />
           <div class="card__info">
-            <h2 class="info__title">Restaurant terrace</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">Restaurant terrace</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
         <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-              alt="outdoor cafe seating"
-            />
-          </div>
+          <img
+            class="card__image"
+            src="spots-images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+            alt="outdoor cafe seating"
+          />
           <div class="card__info">
-            <h2 class="info__title">An outdoor cafe</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">An outdoor cafe</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
         <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/4-photo-by-maurice-laschet-from-pexels.jpg"
-              alt="long hanging bridge over forest"
-            />
-          </div>
+          <img
+            class="card__image"
+            src="spots-images/4-photo-by-maurice-laschet-from-pexels.jpg"
+            alt="long hanging bridge over forest"
+          />
           <div class="card__info">
-            <h2 class="info__title">A very long bridge, over the forest...</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">A very long bridge, over the forest...</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
         <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-              alt="view inside enclosed walking bridge"
-            />
-          </div>
+          <img
+            class="card__image"
+            src="spots-images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+            alt="view inside enclosed walking bridge"
+          />
           <div class="card__info">
-            <h2 class="info__title">Tunnel with morning light</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">Tunnel with morning light</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
         <div class="card">
-          <div class="card__border">
-            <img
-              class="card__image"
-              src="spots-images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="cabin in a snowy landscape"
-            />
-          </div>
+          <img
+            class="card__image"
+            src="spots-images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="cabin in a snowy landscape"
+          />
           <div class="card__info">
-            <h2 class="info__title">Mountain house</h2>
-            <img
-              class="info__icon"
-              src="spots-images/Like-Icon.png"
+            <h2 class="card__title">Mountain house</h2>
+            <button
+              class="card__icon-button"
               alt="Like icon"
-            />
+              type="button"
+            ></button>
           </div>
         </div>
-      </main>
-      <footer class="footer">
-        <p class="footer__text">2023 © Spots.</p>
-      </footer>
-    </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">2023 © Spots.</p>
+    </footer>
   </body>
 </html>
