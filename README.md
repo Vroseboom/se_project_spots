@@ -17,3 +17,7 @@ This project is the first stage of a interactive social media webpage that allow
 **Github**
 here is the link for the live page.
 https://vroseboom.github.io/se_project_spots/
+
+**Video**
+here is the link with the video explaining the project.
+https://drive.google.com/file/d/1xaDoeJ7P69lInLCjNC76G3xo9J_lxeqt/view?usp=sharing
