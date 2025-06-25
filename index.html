@@ -133,6 +133,86 @@
           </div>
         </div>
       </section>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button
+            class="modal__close-button"
+            alt="close button"
+            type="button"
+          ></button>
+          <h2 class="modal__title">Edit Profile</h2>
+          <form class="modal__form">
+            <label for="profile-name-input" class="modal__label">
+              Name
+              <input
+                class="modal__input"
+                type="text"
+                id="profile-name-input"
+                placeholder="Type your name"
+                required
+              />
+            </label>
+            <label for="profile-description-input" class="modal__label">
+              Description
+              <input
+                class="modal__input"
+                type="text"
+                id="profile-description-input"
+                placeholder="Describe yourself"
+                required
+              />
+            </label>
+            <button class="modal__submit-button" type="submit">
+              <img
+                src="./spots-images/Plus-icon.png"
+                alt="plus icon"
+                class="modal__submit-button-icon"
+              />
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button
+            class="modal__close-button"
+            alt="close button"
+            type="button"
+          ></button>
+          <h2 class="modal__title">New Post</h2>
+          <form class="modal__form">
+            <label for="card-image-input" class="modal__label">
+              Image link
+              <input
+                class="modal__input"
+                type="url"
+                id="card-image-input"
+                placeholder="Paste a link to the picture"
+                required
+              />
+            </label>
+            <label for="card-caption-input" class="modal__label">
+              Caption
+              <input
+                class="modal__input"
+                type="text"
+                id="card-caption-input"
+                placeholder="type your caption"
+                required
+              />
+            </label>
+            <button class="modal__submit-button" type="submit">
+              <img
+                src="./spots-images/Plus-icon.png"
+                alt="plus icon"
+                class="modal__submit-button-icon"
+              />
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__text">2023 © Spots.</p>
