@@ -12,6 +12,9 @@
   justify-content: center;
   align-items: center;
 }
+.modal_type_preview {
+  padding: 0 16px;
+}
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
@@ -26,7 +29,8 @@
   padding: 32px 50px;
   box-sizing: border-box;
 }
-.modal__close-button {
+
+.modal__close {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -41,8 +45,17 @@
   opacity: 40%;
   cursor: pointer;
 }
-.modal__close-button:hover {
+.modal__close_type_preview {
+  background-image: url("../spots-images/Close-preview.svg");
+  top: 0;
+  right: -52.5px;
+  opacity: 1;
+}
+.modal__close:hover {
   opacity: 100%;
+}
+.modal__close_type_preview:hover {
+  opacity: 40%;
 }
 .modal__title {
   margin: 0 0 32px;
@@ -110,6 +123,34 @@
 .modal__submit-button:hover {
   opacity: 80%;
 }
+.modal__image-container {
+  position: relative;
+}
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+.modal__caption {
+  color: #fff;
+  max-width: 214px;
+  background-color: #212121;
+  margin: 0;
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @media screen and (max-width: 627px) {
   .modal__container {
     padding: 12px;
@@ -122,6 +163,10 @@
     top: 12px;
     right: 12px;
   }
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
   .modal__input {
     margin: 8px 0 0;
     width: 92%;
@@ -130,5 +175,12 @@
   .modal__submit-button {
     width: 100%;
     margin-right: 0;
+  }
+  .modal__image {
+    max-width: unset;
+  }
+  .modal__caption {
+    max-width: 175px;
+    font-size: 16px;
   }
 }

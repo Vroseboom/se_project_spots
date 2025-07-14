@@ -42,76 +42,20 @@
         </button>
       </section>
       <section class="cards">
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-            alt="snow covered building viewed through open window"
-          />
-          <div class="card__info">
-            <h2 class="card__title">Val Thorens</h2>
-            <button class="card__icon-button" type="button"></button>
+        <template id="card-template">
+          <div class="card">
+            <img class="card__image" src="#" alt="" />
+            <button class="card__delete-button" type="button"></button>
+            <div class="card__info">
+              <h2 class="card__title"></h2>
+              <button class="card__icon-button" type="button"></button>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/2-photo-by-ceiline-from-pexels.jpg"
-            alt="Restaurant street view"
-          />
-          <div class="card__info">
-            <h2 class="card__title">Restaurant terrace</h2>
-            <button class="card__icon-button" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-            alt="outdoor cafe seating"
-          />
-          <div class="card__info">
-            <h2 class="card__title">An outdoor cafe</h2>
-            <button class="card__icon-button" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/4-photo-by-maurice-laschet-from-pexels.jpg"
-            alt="long hanging bridge over forest"
-          />
-          <div class="card__info">
-            <h2 class="card__title">A very long bridge, over the forest...</h2>
-            <button class="card__icon-button" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-            alt="view inside enclosed walking bridge"
-          />
-          <div class="card__info">
-            <h2 class="card__title">Tunnel with morning light</h2>
-            <button class="card__icon-button" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card__image"
-            src="spots-images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-            alt="cabin in a snowy landscape"
-          />
-          <div class="card__info">
-            <h2 class="card__title">Mountain house</h2>
-            <button class="card__icon-button" type="button"></button>
-          </div>
-        </div>
+        </template>
       </section>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button class="modal__close-button" type="button"></button>
+          <button class="modal__close" type="button"></button>
           <h2 class="modal__title">Edit Profile</h2>
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label">
@@ -140,7 +84,7 @@
       </div>
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button class="modal__close-button" type="button"></button>
+          <button class="modal__close" type="button"></button>
           <h2 class="modal__title">New Post</h2>
           <form class="modal__form">
             <label for="card-image-input" class="modal__label">
@@ -165,6 +109,16 @@
             </label>
             <button class="modal__submit-button" type="submit">Save</button>
           </form>
+        </div>
+      </div>
+      <div class="modal modal_type_preview" id="preview-modal">
+        <div class="modal__image-container">
+          <button
+            class="modal__close modal__close_type_preview"
+            type="button"
+          ></button>
+          <img class="modal__image" src="#" alt="" />
+          <p class="modal__caption"></p>
         </div>
       </div>
     </main>
