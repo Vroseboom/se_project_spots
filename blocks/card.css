@@ -9,6 +9,9 @@
   object-fit: cover;
   width: 100%;
 }
+.card__image:hover {
+  cursor: pointer;
+}
 .card__delete-button {
   width: 32px;
   height: 32px;

@@ -159,7 +159,7 @@
   .modal__title {
     font-size: 20px;
   }
-  .modal__close-button {
+  .modal__close {
     top: 12px;
     right: 12px;
   }
