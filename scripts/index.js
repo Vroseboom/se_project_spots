@@ -88,8 +88,7 @@ function handleNewPostSubmit(event) {
   };
   renderCard(inputValues);
 
-  postCaptionInput.value = "";
-  postImageInput.value = "";
+  document.forms["new-post-form"].reset();
 
   closeModal(newPostModal);
 }
