@@ -66,13 +66,13 @@ closeButtons.forEach(function (button) {
   button.addEventListener("click", () => closeModal(modal));
 });
 
-const escapeHandler = function (event) {
+const closeOnEscape = function (event) {
   if (event.key === "Escape") {
     closeModal(document.querySelector(".modal_is-opened"));
   }
 };
 
-const modalClickHandler = function (event) {
+const closeOnOverlay = function (event) {
   if (event.target === event.currentTarget) {
     closeModal(document.querySelector(".modal_is-opened"));
   }
@@ -80,14 +80,14 @@ const modalClickHandler = function (event) {
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-  document.addEventListener("keydown", escapeHandler);
-  modal.addEventListener("click", modalClickHandler);
+  document.addEventListener("keydown", closeOnEscape);
+  modal.addEventListener("click", closeOnOverlay);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  document.removeEventListener("keydown", escapeHandler);
-  modal.removeEventListener("click", modalClickHandler);
+  document.removeEventListener("keydown", closeOnEscape);
+  modal.removeEventListener("click", closeOnOverlay);
 }
 
 function handleEditProfileSubmit(event) {
