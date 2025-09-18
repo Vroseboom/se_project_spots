@@ -108,7 +108,7 @@ let selectedCard, selectedCardId;
 
 const closeButtons = document.querySelectorAll(".modal__close");
 const deleteImageButton = document.querySelector(".card__submit-button");
-const cancelButton = document.querySelectorAll(".modal__cancel-button");
+const cancelButton = deleteForm.querySelector(".modal__cancel-button");
 
 closeButtons.forEach(function (button) {
   const modal = button.closest(".modal");
@@ -200,6 +200,8 @@ function handleAvatarSubmit(evt) {
     .then((data) => {
       console.log(data);
       profileAvatar.src = data.avatar;
+      document.forms["edit-avatar-form"].reset();
+      disableButton(avatarSubmitButton, settings);
       closeModal(avatarModal);
     })
     .catch((err) => {
@@ -271,6 +273,7 @@ function handleDeleteCard(cardElement, data) {
   console.log(selectedCardId);
   const deleteCloseButton = deleteModal.querySelector(".modal__delete-close");
   deleteCloseButton.addEventListener("click", () => closeModal(deleteModal));
+  cancelButton.addEventListener("click", () => closeModal(deleteModal));
 }
 
 function handleLike(evt, cardId) {
