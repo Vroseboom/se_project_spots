@@ -16,11 +16,20 @@
     </header>
     <main class="page__content">
       <section class="profile">
-        <img
-          class="profile__image"
-          src="<%=require('./spots-images/avatar.jpg')%>"
-          alt="Bessie Coleman"
-        />
+        <div class="profile__avatar-wrapper">
+          <button class="profile__avatar-button" type="button">
+            <img
+              class="profile__avatar-icon"
+              src="<%=require('./spots-images/pencil-icon.png')%>"
+              alt="pencil icon"
+            />
+          </button>
+          <img
+            class="profile__image"
+            src="<%=require('./spots-images/avatar.jpg')%>"
+            alt="Bessie Coleman"
+          />
+        </div>
         <div class="profile__info">
           <div class="profile__content">
             <h1 class="profile__name">Bessie Coleman</h1>
@@ -135,6 +144,52 @@
           ></button>
           <img class="modal__image" src="#" alt="" />
           <p class="modal__caption"></p>
+        </div>
+      </div>
+      <div class="modal" id="edit-avatar-modal">
+        <div class="modal__container">
+          <button class="modal__close" type="button"></button>
+          <h2 class="modal__title">Edit profile avatar</h2>
+          <form class="modal__form" id="edit-avatar-form" novalidate>
+            <label for="profile-avatar-input" class="modal__label">
+              Profile Picture
+              <input
+                class="modal__input"
+                type="url"
+                id="profile-avatar-input"
+                placeholder="Paste the link to an image"
+                required
+              />
+              <span class="modal__error" id="profile-avatar-input-error"></span>
+            </label>
+            <button class="modal__submit-button" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal" id="delete-modal">
+        <div class="modal__delete-container">
+          <button class="modal__delete-close" type="button"></button>
+          <h2 class="modal__delete-title">
+            Are you sure you want to delete this image?
+          </h2>
+          <form class="modal__delete-form" id="delete-form" novalidate>
+            <button class="modal__delete-button" type="submit">
+              <img
+                src="<%=require('./spots-images/Plus-icon.png')%>"
+                alt="plus icon"
+                class="modal__delete-button-icon"
+              />
+              Delete
+            </button>
+            <button class="modal__cancel-button" type="button">
+              <img
+                src="<%=require('./spots-images/Plus-icon.png')%>"
+                alt="plus icon"
+                class="modal__delete-button-icon"
+              />
+              Cancel
+            </button>
+          </form>
         </div>
       </div>
     </main>
