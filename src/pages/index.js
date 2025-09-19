@@ -306,12 +306,6 @@ editProfileButton.addEventListener("click", function () {
 });
 
 avatarButton.addEventListener("click", function () {
-  resetValidation(
-    avatarForm,
-    Array.from(avatarForm.querySelectorAll(".modal__input")),
-    settings
-  );
-  disableButton(avatarSubmitButton, settings);
   openModal(avatarModal);
 });
 
